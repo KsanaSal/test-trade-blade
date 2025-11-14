@@ -1,0 +1,19 @@
+@mixin plex-sans($weight: 400, $width: 100) {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+    font-variation-settings: "wdth" $width;
+}
+
+.regular {
+    @include plex-sans(400);
+}
+
+.medium {
+    @include plex-sans(500);
+}
+
+.bold {
+    @include plex-sans(700);
+}
