@@ -11,33 +11,78 @@
         <title>Trade blade</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <a href=""></a>
-                <ul>
-                    <li><a href="">Цифри</a></li>
-                    <li><a href="">Угоди онлайн</a></li>
-                    <li><a href="">Про компанію</a></li>
-                    <li><a href="">Як почати</a></li>
-                    <li><a href="">Тарифи</a></li>
-                    <li><a href="">Відгуки</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-            </nav>
-            <div><button>Вхід</button><button>Реєстрація</button></div>
-            <button>бургер</button>
-            <div>
-                <button>close</button>
-                <ul>
-                    <li><a href="">Цифри</a></li>
-                    <li><a href="">Угоди онлайн</a></li>
-                    <li><a href="">Про компанію</a></li>
-                    <li><a href="">Як почати</a></li>
-                    <li><a href="">Тарифи</a></li>
-                    <li><a href="">Відгуки</a></li>
-                    <li><a href="">FAQ</a></li>
-                </ul>
-                <div><button>Реєстрація</button><button>Увійти</button></div>
+        <header class="header text-white">
+            <div class="container">
+                <div class="header__container">
+                    <a href="/">
+                        <img
+                            class="header__logo"
+                            srcset="
+                                ./images/logo/logo.png    1x,
+                                ./images/logo/logo@2x.png 2x
+                            "
+                            src="./images/logo/logo.png"
+                            alt="Logo"
+                        />
+                    </a>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li><a href="">Цифри</a></li>
+                            <li><a href="">Угоди онлайн</a></li>
+                            <li><a href="">Про компанію</a></li>
+                            <li><a href="">Як почати</a></li>
+                            <li><a href="">Тарифи</a></li>
+                            <li><a href="">Відгуки</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__buttons">
+                        <button>Вхід</button><button>Реєстрація</button>
+                    </div>
+                    <button class="header__burger menu-btn-open" type="button">
+                        бургер
+                    </button>
+                    <div class="mobile-menu">
+                        <button
+                            class="mobile-menu__btn-close menu-btn-close"
+                            type="button"
+                        >
+                            close
+                        </button>
+                        <ul class="mobile-menu__list">
+                            <li>
+                                <a href="" class="mobile-menu__link">Цифри</a>
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu__link"
+                                    >Угоди онлайн</a
+                                >
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu__link"
+                                    >Про компанію</a
+                                >
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu__link"
+                                    >Як почати</a
+                                >
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu__link">Тарифи</a>
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu__link">Відгуки</a>
+                            </li>
+                            <li>
+                                <a href="" class="mobile-menu__link">FAQ</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <button>Реєстрація</button><button>Увійти</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
@@ -491,5 +536,6 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>
