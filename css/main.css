@@ -20,6 +20,7 @@
   --color-dark-80: rgba(0, 0, 0, 0.8);
   --color-bg-dark-80: rgb(3, 7, 24, 0.8);
   --color-primary-dark-20: rgb(87, 225, 255, 0.2);
+  --shadow-button: 0 0 4px 0 rgb(87, 225, 255);
 }
 
 .ibm-plex-regular {
@@ -153,6 +154,63 @@ button {
   font-weight: 700;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+.link {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.link:hover {
+  color: var(--color-brand-normal);
+}
+
+.button-opacity {
+  display: block;
+  padding: 16px 0;
+  color: var(--color-primary-dark);
+  font-weight: 500;
+  background-color: var(--color-primary-dark-20);
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 3px;
+  cursor: pointer;
+  width: 165px;
+  box-shadow: var(--shadow-button);
+}
+.button-opacity:hover {
+  color: var(--color-bg-dark);
+  background-color: var(--color-primary-dark);
+}
+@media screen and (min-width: 1440px) {
+  .button-opacity {
+    padding: 11px 24px;
+    font-size: 14px;
+    width: 86px;
+  }
+}
+
+.buttons {
+  display: block;
+  padding: 16px 0;
+  color: var(--color-bg-dark);
+  font-weight: 500;
+  background-color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 3px;
+  cursor: pointer;
+  width: 165px;
+  box-shadow: var(--shadow-button);
+}
+.buttons:hover {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-dark-20);
+}
+@media screen and (min-width: 1440px) {
+  .buttons {
+    padding: 11px 24px;
+    font-size: 14px;
+    width: 146px;
+  }
 }
 
 .section {
@@ -316,57 +374,109 @@ button {
   margin-top: 113px;
 }
 
-.link {
-  color: var(--color-white);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-.link:hover {
-  color: var(--color-brand-normal);
-}
-
-.button-opacity {
-  display: block;
-  padding: 16px 0;
-  color: var(--color-primary-dark);
-  font-weight: 500;
-  background-color: var(--color-primary-dark-20);
-  border: 2px solid var(--color-primary-dark);
-  border-radius: 3px;
-  cursor: pointer;
-  width: 165px;
-}
-.button-opacity:hover {
-  color: var(--color-bg-dark);
-  background-color: var(--color-primary-dark);
+.hero {
+  background-color: var(--color-bg-dark);
+  padding: 92px 0;
 }
 @media screen and (min-width: 1440px) {
-  .button-opacity {
-    padding: 11px 24px;
-    font-size: 14px;
-    width: 86px;
+  .hero {
+    padding: 160px 0;
   }
 }
-
-.buttons {
-  display: block;
-  padding: 16px 0;
-  color: var(--color-bg-dark);
-  font-weight: 500;
-  background-color: var(--color-primary-dark);
-  border: 2px solid var(--color-primary-dark);
-  border-radius: 3px;
-  cursor: pointer;
-  width: 165px;
-}
-.buttons:hover {
-  color: var(--color-primary-dark);
-  background-color: var(--color-primary-dark-20);
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
 }
 @media screen and (min-width: 1440px) {
-  .buttons {
-    padding: 11px 24px;
-    font-size: 14px;
-    width: 146px;
+  .hero__container {
+    flex-direction: row-reverse;
+    gap: 128px;
   }
+}
+.hero__img {
+  width: 300px;
+  height: 134px;
+}
+@media screen and (min-width: 1440px) {
+  .hero__img {
+    width: 500px;
+    height: 210px;
+  }
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (min-width: 1440px) {
+  .hero__content {
+    width: 630px;
+  }
+}
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .hero__info {
+    width: 630px;
+  }
+}
+.hero__title {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    font-size: 60px;
+  }
+}
+.hero__text {
+  color: rgba(231, 247, 248, 0.8);
+}
+@media screen and (min-width: 1440px) {
+  .hero__text {
+    width: 560px;
+  }
+}
+.hero__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.hero__form--text {
+  color: var(--color-light-30);
+  font-size: 14px;
+}
+@media screen and (min-width: 1440px) {
+  .hero__form {
+    width: 500px;
+  }
+}
+.hero__input {
+  padding: 16px 15px;
+  color: var(--color-light-34);
+  font-weight: 500;
+  background-color: var(--color-brand-dark);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  .hero__input {
+    padding: 16px 20px;
+  }
+}
+.hero__button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 102px;
+  height: 42px;
+  padding: 11px 0;
 }/*# sourceMappingURL=main.css.map */

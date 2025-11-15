@@ -5,11 +5,12 @@
 @use "./utils/utils";
 @use "./utils/mixin";
 
+@use "./components/link";
+@use "./components/button-opacity";
+@use "./components/buttons";
+
 @use "./layouts/section";
 @use "./layouts/container";
 @use "./layouts/header";
 @use "./layouts/mobile-menu";
-
-@use "./components/link";
-@use "./components/button-opacity";
-@use "./components/buttons";
+@use "./layouts/hero";
