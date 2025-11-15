@@ -1,0 +1,106 @@
+@use "../utils/variables" as *;
+
+.numbers {
+    position: relative;
+    padding: 24px 0 48px 0;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 56px 0 60px 0;
+    }
+
+    &__bg {
+        position: absolute;
+        top: -24px;
+        left: 0;
+        width: 272px;
+        height: 82px;
+        background-color: var(--color-white);
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 640px;
+            height: 60px;
+            top: -59px;
+        }
+
+        &--left {
+            clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            gap: 156px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        z-index: 1;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 44px;
+        }
+    }
+
+    &__text {
+        color: var(--color-dark-50);
+        font-size: 14px;
+    }
+
+    &__list {
+        display: grid;
+        grid-row: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px 60px;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        @media screen and (min-width: $bp-desktop) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            gap: 0 100px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        @media screen and (min-width: $bp-desktop) {
+            gap: 8px;
+        }
+
+        &--text {
+            color: var(--color-dark-80);
+
+            @media screen and (min-width: $bp-desktop) {
+                width: 230px;
+            }
+        }
+
+        &--number {
+            font-weight: 500;
+            color: var(--color-brand-light);
+            font-size: 35px;
+
+            @media screen and (min-width: $bp-desktop) {
+                font-size: 60px;
+            }
+        }
+    }
+}

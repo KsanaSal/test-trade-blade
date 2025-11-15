@@ -72,7 +72,7 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 img {
@@ -376,7 +376,7 @@ button {
 
 .hero {
   background-color: var(--color-bg-dark);
-  padding: 92px 0;
+  padding: 92px 0 64px 0;
 }
 @media screen and (min-width: 1440px) {
   .hero {
@@ -479,4 +479,107 @@ button {
   width: 102px;
   height: 42px;
   padding: 11px 0;
+}
+
+.numbers {
+  position: relative;
+  padding: 24px 0 48px 0;
+}
+@media screen and (min-width: 1440px) {
+  .numbers {
+    padding: 56px 0 60px 0;
+  }
+}
+.numbers__bg {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 272px;
+  height: 82px;
+  background-color: var(--color-white);
+}
+@media screen and (min-width: 1440px) {
+  .numbers__bg {
+    width: 640px;
+    height: 60px;
+    top: -59px;
+  }
+}
+.numbers__bg--left {
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+}
+.numbers__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 1440px) {
+  .numbers__container {
+    flex-direction: row;
+    gap: 156px;
+  }
+}
+.numbers__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  z-index: 1;
+}
+.numbers__title {
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .numbers__title {
+    font-size: 44px;
+  }
+}
+.numbers__text {
+  color: var(--color-dark-50);
+  font-size: 14px;
+}
+.numbers__list {
+  display: grid;
+  grid-row: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 32px 60px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1440px) {
+  .numbers__list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0 100px;
+  }
+}
+.numbers__item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+@media screen and (min-width: 1440px) {
+  .numbers__item {
+    gap: 8px;
+  }
+}
+.numbers__item--text {
+  color: var(--color-dark-80);
+}
+@media screen and (min-width: 1440px) {
+  .numbers__item--text {
+    width: 230px;
+  }
+}
+.numbers__item--number {
+  font-weight: 500;
+  color: var(--color-brand-light);
+  font-size: 35px;
+}
+@media screen and (min-width: 1440px) {
+  .numbers__item--number {
+    font-size: 60px;
+  }
 }/*# sourceMappingURL=main.css.map */
