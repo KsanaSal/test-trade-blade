@@ -1,0 +1,12 @@
+@use "../utils/variables" as *;
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 0 80px;
+    }
+}
