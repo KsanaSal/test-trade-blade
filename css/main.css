@@ -10,6 +10,7 @@
   --color-black: #000;
   --color-bg-dark: #030718;
   --color-bg-light: #fff;
+  --color-icon: #e7f7f8;
   --color-light-30: rgba(255, 255, 255, 0.3);
   --color-light-34: rgba(255, 255, 255, 0.34);
   --color-light-40: rgba(255, 255, 255, 0.4);
@@ -18,6 +19,7 @@
   --color-dark-50: rgba(0, 0, 0, 0.5);
   --color-dark-80: rgba(0, 0, 0, 0.8);
   --color-bg-dark-80: rgb(3, 7, 24, 0.8);
+  --color-primary-dark-20: rgb(87, 225, 255, 0.2);
 }
 
 .ibm-plex-regular {
@@ -93,6 +95,11 @@ ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  text-transform: unset;
 }
 
 .text-white {
@@ -199,6 +206,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  text-transform: uppercase;
 }
 .header__nav {
   display: none;
@@ -209,7 +217,6 @@ ul {
   }
 }
 .header__logo {
-  width: 110px;
   height: 52px;
 }
 @media screen and (min-width: 1440px) {
@@ -223,7 +230,7 @@ ul {
 @media screen and (min-width: 1440px) {
   .header__menu {
     display: flex;
-    gap: 20px;
+    gap: 32px;
   }
 }
 .header__buttons {
@@ -232,15 +239,16 @@ ul {
 @media screen and (min-width: 1440px) {
   .header__buttons {
     display: flex;
+    gap: 12px;
   }
 }
 .header__burger {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   padding: 0;
   background-color: transparent;
   border: none;
-  fill: var(--color-primary-light);
+  fill: var(--color-icon);
 }
 @media screen and (min-width: 1440px) {
   .header__burger {
@@ -255,9 +263,11 @@ ul {
   z-index: 2;
   width: 100%;
   height: 100%;
-  padding: 16px 24px;
+  padding: 9px 8px 0 16px;
   transform: translateX(100%);
   transition: transform 0.3s;
+  background-color: var(--color-brand-light);
+  text-transform: uppercase;
 }
 .mobile-menu::after {
   position: absolute;
@@ -272,14 +282,13 @@ ul {
 }
 .mobile-menu__btn-close {
   position: absolute;
-  top: 16px;
-  right: 24px;
+  top: 9px;
+  right: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  fill: transparent;
-  stroke: var(--color-primary-dark);
+  fill: var(--color-white);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -288,14 +297,23 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-top: 60px;
 }
 .mobile-menu__link {
-  font-size: 14px;
+  color: var(--color-white);
+  font-size: 24px;
   line-height: 1.5;
   text-decoration: none;
 }
 .mobile-menu__link:hover {
   color: var(--color-brand-normal);
+}
+.mobile-menu__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 113px;
 }
 
 .link {
@@ -305,4 +323,50 @@ ul {
 }
 .link:hover {
   color: var(--color-brand-normal);
+}
+
+.button-opacity {
+  display: block;
+  padding: 16px 0;
+  color: var(--color-primary-dark);
+  font-weight: 500;
+  background-color: var(--color-primary-dark-20);
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 3px;
+  cursor: pointer;
+  width: 165px;
+}
+.button-opacity:hover {
+  color: var(--color-bg-dark);
+  background-color: var(--color-primary-dark);
+}
+@media screen and (min-width: 1440px) {
+  .button-opacity {
+    padding: 11px 24px;
+    font-size: 14px;
+    width: 86px;
+  }
+}
+
+.buttons {
+  display: block;
+  padding: 16px 0;
+  color: var(--color-bg-dark);
+  font-weight: 500;
+  background-color: var(--color-primary-dark);
+  border: 2px solid var(--color-primary-dark);
+  border-radius: 3px;
+  cursor: pointer;
+  width: 165px;
+}
+.buttons:hover {
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-dark-20);
+}
+@media screen and (min-width: 1440px) {
+  .buttons {
+    padding: 11px 24px;
+    font-size: 14px;
+    width: 146px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+@use "../utils/variables" as *;
+
+.buttons {
+    display: block;
+    padding: 16px 0;
+    color: var(--color-bg-dark);
+    font-weight: 500;
+    background-color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary-dark);
+    border-radius: 3px;
+    cursor: pointer;
+    width: 165px;
+
+    &:hover {
+        color: var(--color-primary-dark);
+        background-color: var(--color-primary-dark-20);
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 11px 24px;
+        font-size: 14px;
+        width: 146px;
+    }
+}
