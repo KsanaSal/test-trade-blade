@@ -47,6 +47,9 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+li {
+    width: unset;
+}
 button {
     cursor: pointer;
     text-transform: unset;

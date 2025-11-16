@@ -1,0 +1,216 @@
+@use "../utils/variables" as *;
+
+.agreements {
+    padding: 50px 0 80px 0;
+    background-color: var(--color-bg-dark);
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 4px;
+        color: var(--color-accent);
+
+        &--circle {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: var(--color-accent);
+        }
+
+        &--text {
+            font-size: 14px;
+            text-transform: capitalize;
+        }
+    }
+
+    &__carrousel {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        @media screen and (min-width: $bp-tablet) {
+            gap: 16px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            gap: 20px;
+        }
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        padding: 16px 16px 13px 16px;
+        background-color: var(--color-brand-light);
+        border-radius: 4px;
+        width: 300px;
+        height: 210px;
+
+        &--bg {
+            clip-path: polygon(
+                0 0,
+                /* верхній лівий */ 260px 0,
+                /* 300 - 40 = 260 */ 300px 40px,
+                /* точка зміщена вниз — початок трикутника */ 300px 210px,
+                /* нижній правий */ 0 210px /* нижній лівий */
+            );
+        }
+
+        &--info {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            align-items: center;
+        }
+
+        &--top {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        &--text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        &--title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        &--subtitle {
+            font-size: 14px;
+            color: var(--color-light-40);
+
+            &--size {
+                text-transform: lowercase;
+                font-weight: 400;
+            }
+        }
+
+        &--name {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--color-light-70);
+        }
+
+        &--number {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            font-size: 28px;
+            color: var(--color-accent);
+            height: 36px;
+            align-items: center;
+        }
+
+        &--icon {
+            width: 11px;
+            height: 18px;
+        }
+
+        &--logo {
+            position: absolute;
+            top: 8px;
+            right: -52px;
+            width: 160px;
+            height: 160px;
+        }
+
+        &--bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &--target {
+                font-size: 14px;
+                font-weight: 500;
+                color: var(--color-light-70);
+                text-transform: capitalize;
+            }
+
+            &--date {
+                font-size: 14px;
+                color: var(--color-light-40);
+                text-transform: math-auto;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__pagination {
+        margin: 0 auto;
+
+        &--track {
+            width: 310px;
+            height: 6px;
+            background-color: rgb(67, 79, 112, 0.4);
+            border-radius: 56px;
+            position: relative;
+            cursor: pointer;
+
+            @media screen and (min-width: $bp-tablet) {
+                width: 640px;
+            }
+
+            @media screen and (min-width: $bp-desktop) {
+                width: 955px;
+            }
+        }
+
+        &--thumb {
+            width: 60px;
+            height: 6px;
+            background-color: #6073a1;
+            border-radius: 56px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: left 0.3s ease, width 0.3s ease;
+
+            @media screen and (min-width: $bp-tablet) {
+                width: 120px;
+            }
+
+            @media screen and (min-width: $bp-desktop) {
+                width: 190px;
+            }
+        }
+    }
+}
+
+.swiper-container {
+    overflow: hidden;
+}
+
+.swiper-slide {
+    list-style: none;
+}

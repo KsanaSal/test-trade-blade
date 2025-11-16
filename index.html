@@ -147,7 +147,7 @@
                 </div>
             </section>
             <section class="numbers section text-blake" id="numbers">
-                <div class="numbers__bg numbers__bg--left"></div>
+                <div class="numbers__bg numbers__bg--right"></div>
                 <div class="container numbers__container">
                     <div class="numbers__info">
                         <h2 class="numbers__title">Цифри</h2>
@@ -175,102 +175,316 @@
                     </ul>
                 </div>
             </section>
-            <!-- <section>
-                <h2>минулі угоди</h2>
-                <p>Онлайн</p>
-                <ul>
-                    <li>
-                        <div>
-                            <div>
-                                <p>NEAR/USDT</p>
-                                <p>SPOT · 1 хв. тому</p>
-                            </div>
-                            <div>
-                                <p>Прибуток</p>
-                                <span>58.6206%</span>
-                                <img src="" alt="" />
-                            </div>
-                            <img src="" alt="" />
+            <section
+                class="agreements section text-uppercase"
+                id="online-agreements"
+            >
+                <div class="container text-white agreements__container">
+                    <div class="agreements__info">
+                        <h2 class="agreements__title">минулі угоди</h2>
+                        <div class="agreements__subtitle">
+                            <span class="agreements__subtitle--circle"></span>
+                            <p class="agreements__subtitle--text">Онлайн</p>
                         </div>
-                        <div>
-                            <p>Ціль 4</p>
-                            <p>Дата входу 06.10.2022</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <div>
-                                <p>BTC/USDT</p>
-                                <p>SPOT · 1 хв. тому</p>
+                    </div>
+                    <div class="agreements__carrousel swiper-container">
+                        <ul class="swiper-wrapper agreements__cards">
+                            <li
+                                class="swiper-slide agreements__card agreements__card--bg"
+                            >
+                                <div class="agreements__card--info">
+                                    <div class="agreements__card--top">
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--title">
+                                                NEAR/USDT
+                                            </p>
+                                            <p
+                                                class="agreements__card--subtitle"
+                                            >
+                                                SPOT
+                                                <span
+                                                    class="agreements__card--subtitle--size"
+                                                    >· 1 хв. тому</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--name">
+                                                Прибуток
+                                            </p>
+                                            <div
+                                                class="agreements__card--number"
+                                            >
+                                                <span>58.6206%</span>
+                                                <svg
+                                                    class="agreements__card--icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-arrow-up"
+                                                    ></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="agreements__card--logo"
+                                        src="./images/agreements/logo-opacity.png"
+                                        srcset="
+                                            ./images/agreements/logo-opacity.png    1x,
+                                            ./images/agreements/logo-opacity@2x.png 2x
+                                        "
+                                        alt="Logo"
+                                    />
+                                </div>
+                                <div class="agreements__card--bottom">
+                                    <p class="agreements__card--bottom--target">
+                                        Ціль 4
+                                    </p>
+                                    <p class="agreements__card--bottom--date">
+                                        Дата входу 06.10.2022
+                                    </p>
+                                </div>
+                            </li>
+                            <li
+                                class="swiper-slide agreements__card agreements__card--bg"
+                            >
+                                <div class="agreements__card--info">
+                                    <div class="agreements__card--top">
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--title">
+                                                BTC/USDT
+                                            </p>
+                                            <p
+                                                class="agreements__card--subtitle"
+                                            >
+                                                SPOT
+                                                <span
+                                                    class="agreements__card--subtitle--size"
+                                                    >· 1 хв. тому</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--name">
+                                                Прибуток
+                                            </p>
+                                            <div
+                                                class="agreements__card--number"
+                                            >
+                                                <span>6.02%</span>
+                                                <svg
+                                                    class="agreements__card--icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-arrow-up"
+                                                    ></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="agreements__card--logo"
+                                        src="./images/agreements/logo-opacity.png"
+                                        srcset="
+                                            ./images/agreements/logo-opacity.png    1x,
+                                            ./images/agreements/logo-opacity@2x.png 2x
+                                        "
+                                        alt="Logo"
+                                    />
+                                </div>
+                                <div class="agreements__card--bottom">
+                                    <p class="agreements__card--bottom--target">
+                                        Ціль 3
+                                    </p>
+                                    <p class="agreements__card--bottom--date">
+                                        Дата входу 06.10.2022
+                                    </p>
+                                </div>
+                            </li>
+                            <li
+                                class="swiper-slide agreements__card agreements__card--bg"
+                            >
+                                <div class="agreements__card--info">
+                                    <div class="agreements__card--top">
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--title">
+                                                ETH/USDT
+                                            </p>
+                                            <p
+                                                class="agreements__card--subtitle"
+                                            >
+                                                SPOT
+                                                <span
+                                                    class="agreements__card--subtitle--size"
+                                                    >· 1 хв. тому</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--name">
+                                                Прибуток
+                                            </p>
+                                            <div
+                                                class="agreements__card--number"
+                                            >
+                                                <span>16.3%</span>
+                                                <svg
+                                                    class="agreements__card--icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-arrow-up"
+                                                    ></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="agreements__card--logo"
+                                        src="./images/agreements/logo-opacity.png"
+                                        srcset="
+                                            ./images/agreements/logo-opacity.png    1x,
+                                            ./images/agreements/logo-opacity@2x.png 2x
+                                        "
+                                        alt="Logo"
+                                    />
+                                </div>
+                                <div class="agreements__card--bottom">
+                                    <p class="agreements__card--bottom--target">
+                                        Ціль 4
+                                    </p>
+                                    <p class="agreements__card--bottom--date">
+                                        Дата входу 06.10.2022
+                                    </p>
+                                </div>
+                            </li>
+                            <li
+                                class="swiper-slide agreements__card agreements__card--bg"
+                            >
+                                <div class="agreements__card--info">
+                                    <div class="agreements__card--top">
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--title">
+                                                NEAR/USDT
+                                            </p>
+                                            <p
+                                                class="agreements__card--subtitle"
+                                            >
+                                                SPOT
+                                                <span
+                                                    class="agreements__card--subtitle--size"
+                                                    >· 1 хв. тому</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--name">
+                                                Прибуток
+                                            </p>
+                                            <div
+                                                class="agreements__card--number"
+                                            >
+                                                <span>0.963%</span>
+                                                <svg
+                                                    class="agreements__card--icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-arrow-up"
+                                                    ></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="agreements__card--logo"
+                                        src="./images/agreements/logo-opacity.png"
+                                        srcset="
+                                            ./images/agreements/logo-opacity.png    1x,
+                                            ./images/agreements/logo-opacity@2x.png 2x
+                                        "
+                                        alt="Logo"
+                                    />
+                                </div>
+                                <div class="agreements__card--bottom">
+                                    <p class="agreements__card--bottom--target">
+                                        Ціль 4
+                                    </p>
+                                    <p class="agreements__card--bottom--date">
+                                        Дата входу 06.10.2022
+                                    </p>
+                                </div>
+                            </li>
+                            <li
+                                class="swiper-slide agreements__card agreements__card--bg"
+                            >
+                                <div class="agreements__card--info">
+                                    <div class="agreements__card--top">
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--title">
+                                                NEAR/USDT
+                                            </p>
+                                            <p
+                                                class="agreements__card--subtitle"
+                                            >
+                                                SPOT
+                                                <span
+                                                    class="agreements__card--subtitle--size"
+                                                    >· 1 хв. тому</span
+                                                >
+                                            </p>
+                                        </div>
+                                        <div class="agreements__card--text">
+                                            <p class="agreements__card--name">
+                                                Прибуток
+                                            </p>
+                                            <div
+                                                class="agreements__card--number"
+                                            >
+                                                <span>58.6206%</span>
+                                                <svg
+                                                    class="agreements__card--icon"
+                                                >
+                                                    <use
+                                                        href="./images/icons.svg#icon-arrow-up"
+                                                    ></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img
+                                        class="agreements__card--logo"
+                                        src="./images/agreements/logo-opacity.png"
+                                        srcset="
+                                            ./images/agreements/logo-opacity.png    1x,
+                                            ./images/agreements/logo-opacity@2x.png 2x
+                                        "
+                                        alt="Logo"
+                                    />
+                                </div>
+                                <div class="agreements__card--bottom">
+                                    <p class="agreements__card--bottom--target">
+                                        Ціль 4
+                                    </p>
+                                    <p class="agreements__card--bottom--date">
+                                        Дата входу 06.10.2022
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="agreements__pagination">
+                            <div class="agreements__pagination--track">
+                                <div
+                                    class="agreements__pagination--thumb"
+                                ></div>
                             </div>
-                            <div>
-                                <p>Прибуток</p>
-                                <span>6.02%</span>
-                                <img src="" alt="" />
-                            </div>
-                            <img src="" alt="" />
                         </div>
-                        <div>
-                            <p>Ціль 3</p>
-                            <p>Дата входу 06.10.2022</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <div>
-                                <p>ETH/USDT</p>
-                                <p>SPOT · 1 хв. тому</p>
-                            </div>
-                            <div>
-                                <p>Прибуток</p>
-                                <span>16.3%</span>
-                                <img src="" alt="" />
-                            </div>
-                            <img src="" alt="" />
-                        </div>
-                        <div>
-                            <p>Ціль 4</p>
-                            <p>Дата входу 06.10.2022</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <div>
-                                <p>NEAR/USDT</p>
-                                <p>SPOT · 1 хв. тому</p>
-                            </div>
-                            <div>
-                                <p>Прибуток</p>
-                                <span>0.963%</span>
-                                <img src="" alt="" />
-                            </div>
-                            <img src="" alt="" />
-                        </div>
-                        <div>
-                            <p>Ціль 4</p>
-                            <p>Дата входу 06.10.2022</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <div>
-                                <p>NEAR/USDT</p>
-                                <p>SPOT · 1 хв. тому</p>
-                            </div>
-                            <div>
-                                <p>Прибуток</p>
-                                <span>58.6206%</span>
-                                <img src="" alt="" />
-                            </div>
-                            <img src="" alt="" />
-                        </div>
-                        <div>
-                            <p>Ціль 4</p>
-                            <p>Дата входу 06.10.2022</p>
-                        </div>
-                    </li>
-                </ul>
-            </section> -->
+                        <!-- <div class="agreements__scroll">
+                            <div></div>
+                            <span class="agreements__scroll--long"></span>
+                            <span class="agreements__scroll--short"></span>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
             <!-- <section>
                 <div>
                     <h2>Про компанію</h2>
@@ -596,7 +810,8 @@
             </div>
         </footer> -->
 
-        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <script src="./js/mobile-menu.js"></script>
+        <script src="./js/slider.js"></script>
     </body>
 </html>

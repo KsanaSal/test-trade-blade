@@ -98,6 +98,10 @@ ul {
   list-style-type: none;
 }
 
+li {
+  width: unset;
+}
+
 button {
   cursor: pointer;
   text-transform: unset;
@@ -729,6 +733,16 @@ button {
   flex-direction: row;
   gap: 8px;
 }
+@media screen and (min-width: 768px) {
+  .agreements__cards {
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .agreements__cards {
+    gap: 20px;
+  }
+}
 .agreements__card {
   position: relative;
   display: flex;
@@ -813,23 +827,52 @@ button {
   text-transform: math-auto;
   font-weight: 400;
 }
-.agreements__scroll {
-  position: relative;
+.agreements__pagination {
   margin: 0 auto;
 }
-.agreements__scroll--long {
-  display: block;
+.agreements__pagination--track {
   width: 310px;
   height: 6px;
   background-color: rgba(67, 79, 112, 0.4);
   border-radius: 56px;
+  position: relative;
+  cursor: pointer;
 }
-.agreements__scroll--short {
-  position: absolute;
-  top: 0;
-  left: 0;
+@media screen and (min-width: 768px) {
+  .agreements__pagination--track {
+    width: 640px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .agreements__pagination--track {
+    width: 955px;
+  }
+}
+.agreements__pagination--thumb {
   width: 60px;
   height: 6px;
   background-color: #6073a1;
   border-radius: 56px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 0.3s ease, width 0.3s ease;
+}
+@media screen and (min-width: 768px) {
+  .agreements__pagination--thumb {
+    width: 120px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .agreements__pagination--thumb {
+    width: 190px;
+  }
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+.swiper-slide {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */
