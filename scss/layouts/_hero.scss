@@ -4,8 +4,12 @@
     background-color: var(--color-bg-dark);
     padding: 92px 0 64px 0;
 
+    @media screen and (min-width: $bp-tablet) {
+        padding: 120px 0 80px 0;
+    }
+
     @media screen and (min-width: $bp-desktop) {
-        padding: 160px 0;
+        padding: 228px 0 134px 0;
     }
 
     &__container {
@@ -13,8 +17,12 @@
         flex-direction: column;
         gap: 33px;
 
-        @media screen and (min-width: $bp-desktop) {
+        @media screen and (min-width: $bp-tablet) {
             flex-direction: row-reverse;
+            gap: 80px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
             gap: 128px;
         }
     }
@@ -26,6 +34,11 @@
         @media screen and (min-width: $bp-desktop) {
             width: 500px;
             height: 210px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 500px;
+            height: 100%;
         }
     }
 

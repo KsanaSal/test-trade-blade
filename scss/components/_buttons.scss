@@ -17,6 +17,12 @@
         background-color: var(--color-primary-dark-20);
     }
 
+    @media screen and (min-width: $bp-tablet) {
+        padding: 4px 8px;
+        font-size: 14px;
+        width: 110px;
+    }
+
     @media screen and (min-width: $bp-desktop) {
         padding: 11px 24px;
         font-size: 14px;
