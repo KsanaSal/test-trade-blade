@@ -623,8 +623,13 @@ button {
 }
 .numbers__title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .numbers__title {
+    font-size: 36px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .numbers__title {
@@ -707,6 +712,16 @@ button {
 .agreements__title {
   font-size: 28px;
   font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .agreements__title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .agreements__title {
+    font-size: 44px;
+  }
 }
 .agreements__subtitle {
   display: flex;
@@ -943,6 +958,16 @@ button {
   color: var(--color-bg-dark);
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .about__title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about__title {
+    font-size: 44px;
+  }
+}
 .about__text {
   color: var(--color-dark-80);
   font-size: 16px;
@@ -1089,7 +1114,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .tradeblade__title {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -1152,5 +1177,187 @@ button {
 @media screen and (min-width: 1440px) {
   .tradeblade__item--description {
     font-size: 16px;
+  }
+}
+
+.how-to {
+  position: relative;
+  padding: 24px 0 44px 0;
+  background-color: var(--color-brand-light);
+}
+@media screen and (min-width: 768px) {
+  .how-to {
+    padding: 40px 0 64px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .how-to {
+    padding: 56px 0 96px 0;
+  }
+}
+.how-to__bg {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 272px;
+  height: 82px;
+  background-color: var(--color-brand-light);
+}
+@media screen and (min-width: 768px) {
+  .how-to__bg {
+    width: 480px;
+    height: 70px;
+    top: -40px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .how-to__bg {
+    width: 640px;
+    height: 60px;
+    top: -59px;
+  }
+}
+.how-to__bg--right {
+  clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 100%, 0 100%);
+}
+.how-to__container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .how-to__container {
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .how-to__container {
+    gap: 80px;
+  }
+}
+.how-to__title {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .how-to__title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .how-to__title {
+    font-size: 44px;
+  }
+}
+.how-to__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .how-to__steps {
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .how-to__steps {
+    gap: 56px;
+  }
+}
+.how-to__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-left: 1px solid var(--color-light-30);
+  padding: 0 0 0 30px;
+}
+@media screen and (min-width: 1440px) {
+  .how-to__list {
+    flex-direction: row;
+    gap: 40px;
+    padding: 30px 0 0 0;
+    border-top: 1px solid var(--color-light-30);
+    border-left: none;
+    gap: 20px;
+  }
+}
+.how-to__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1440px) {
+  .how-to__item {
+    flex-direction: column;
+  }
+}
+.how-to__item--line {
+  position: absolute;
+  top: 0;
+  left: -31.5px;
+  width: 2px;
+  height: 100%;
+  border-left: 2px solid var(--color-bg-light);
+}
+@media screen and (min-width: 1440px) {
+  .how-to__item--line {
+    top: -31.5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-left: none;
+    border-top: 2px solid var(--color-bg-light);
+  }
+}
+.how-to__item--text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 1440px) {
+  .how-to__item--text {
+    width: 305px;
+  }
+}
+.how-to__item--title {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .how-to__item--title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .how-to__item--title {
+    font-size: 28px;
+  }
+}
+.how-to__item--description {
+  font-size: 16px;
+  color: var(--color-light-80);
+}
+@media screen and (min-width: 768px) {
+  .how-to__item--description {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .how-to__item--description {
+    font-size: 20px;
+  }
+}
+.how-to__btn {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .how-to__btn {
+    width: 345px;
+    padding: 16px 0;
   }
 }/*# sourceMappingURL=main.css.map */
