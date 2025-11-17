@@ -16,6 +16,7 @@
   --color-light-40: rgba(255, 255, 255, 0.4);
   --color-light-50: rgba(255, 255, 255, 0.5);
   --color-light-70: rgba(255, 255, 255, 0.7);
+  --color-light-80: rgba(255, 255, 255, 0.8);
   --color-dark-50: rgba(0, 0, 0, 0.5);
   --color-dark-80: rgba(0, 0, 0, 0.8);
   --color-bg-dark-80: rgb(3, 7, 24, 0.8);
@@ -1048,5 +1049,108 @@ button {
     width: 165px;
     height: 52px;
     padding: 16px 24px;
+  }
+}
+
+.tradeblade {
+  padding: 180px 0 96px 0;
+  background: var(--color-bg-dark);
+}
+@media screen and (min-width: 768px) {
+  .tradeblade {
+    padding: 60px 0 130px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tradeblade {
+    padding: 96px 0 156px 0;
+  }
+}
+.tradeblade__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .tradeblade__container {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tradeblade__container {
+    justify-content: space-between;
+  }
+}
+.tradeblade__title {
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .tradeblade__title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tradeblade__title {
+    font-size: 44px;
+    width: 305px;
+  }
+}
+.tradeblade__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 768px) {
+  .tradeblade__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tradeblade__list {
+    grid-template-columns: 420px 420px;
+    gap: 56px 20px;
+  }
+}
+.tradeblade__item {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.tradeblade__item--img {
+  width: 56px;
+  height: 56px;
+}
+.tradeblade__item--text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tradeblade__item--title {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .tradeblade__item--title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .tradeblade__item--title {
+    font-size: 28px;
+  }
+}
+.tradeblade__item--description {
+  font-size: 14px;
+  color: var(--color-light-80);
+}
+@media screen and (min-width: 1440px) {
+  .tradeblade__item--description {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
