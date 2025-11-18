@@ -73,6 +73,13 @@
         }
     }
 
+    &__link:hover,
+    &__link:focus {
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
     &__buttons {
         display: none;
 

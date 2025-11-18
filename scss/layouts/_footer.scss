@@ -1,0 +1,81 @@
+@use "../utils/variables" as *;
+
+.footer {
+    padding: 40px 0 20px 0;
+    background-color: var(--color-bg-dark);
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 32px 0 40px 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 28px 0 40px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 57px;
+        border-bottom: 1px solid var(--color-light-30);
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: column;
+            padding-bottom: 0;
+            padding-right: 217px;
+            border-bottom: none;
+            border-right: 1px solid var(--color-light-30);
+        }
+    }
+
+    &__title {
+        font-size: 14px;
+        color: var(--color-light-40);
+        width: 107px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-weight: 500;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
+            gap: 24px;
+        }
+    }
+
+    &__link:hover,
+    &__link:focus {
+        text-decoration: underline;
+        color: var(--color-accent);
+        text-underline-offset: 4px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    &__logo {
+        width: 165px;
+    }
+
+    &__copyright {
+        font-size: 14px;
+        color: var(--color-light-50);
+    }
+}
