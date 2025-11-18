@@ -695,80 +695,310 @@
                     </div>
                 </div>
             </section>
-            <!-- <section>
-                <h2>тарифи</h2>
-                <div>
-                    <button>СПОТ</button>
-                    <button>ф'ючерс</button>
-                </div>
-                <div>
-                    <div>
-                        <h3>STANDART</h3>
-                        <ul>
-                            <li>Ручний трейдинг</li>
-                            <li>
-                                Автоматичне або напівавтоматичне копіювання угод
-                            </li>
-                            <li>Особистий кабінет зі статистикою</li>
-                            <li>
-                                Середньострокові угоди з рівнями набору портфеля
-                            </li>
-                        </ul>
-                        <div>
-                            <div>
-                                <span>$234<sup>-35%</sup></span>
-                                <select name="month">
-                                    <option value="12m" selected>
-                                        12 місяців
-                                    </option>
-                                    <option value="9m">9 місяців</option>
-                                    <option value="6m">6 місяців</option>
-                                    <option value="3m">3 місяців</option>
-                                    <option value="1m">1 місяців</option>
-                                </select>
+            <section class="tariffs section text-white">
+                <div class="tariffs__container container">
+                    <div class="tariffs__info--wrapper">
+                        <h2 class="tariffs__title text-uppercase">тарифи</h2>
+                        <div class="tariffs__info">
+                            <div class="tariffs__info--buttons text-uppercase">
+                                <button class="buttons tariffs__info--active">
+                                    СПОТ
+                                </button>
+                                <button class="buttons tariffs__info--inactive">
+                                    ф'ючерс
+                                </button>
                             </div>
-                            <button>
-                                <p>Спробувати</p>
-                                <p>5 днів безкоштовно</p>
-                            </button>
+                            <div class="tariffs__info--cards">
+                                <div
+                                    class="tariffs__info--card tariffs__info--card-standard"
+                                >
+                                    <h3
+                                        class="tariffs__info--card-title text-uppercase"
+                                    >
+                                        STANDART
+                                    </h3>
+                                    <div
+                                        class="tariffs__info--card-data tariffs__info--card-data--standard"
+                                    >
+                                        <ul class="tariffs__info--card-list">
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Ручний трейдинг
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Автоматичне або
+                                                    напівавтоматичне копіювання
+                                                    угод
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Особистий кабінет зі
+                                                    статистикою
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Середньострокові угоди з
+                                                    рівнями набору портфеля
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <div
+                                            class="tariffs__info--card-deposit"
+                                        >
+                                            <div
+                                                class="tariffs__info--card-price"
+                                            >
+                                                <span
+                                                    class="tariffs__info--card-amount"
+                                                    >$234<sup
+                                                        class="tariffs__info--card-sup"
+                                                        >-35%</sup
+                                                    ></span
+                                                >
+                                                <select
+                                                    name="month"
+                                                    class="tariffs__info--card-month text-white"
+                                                >
+                                                    <option
+                                                        value="12m"
+                                                        selected
+                                                    >
+                                                        12 місяців
+                                                    </option>
+                                                    <option value="9m">
+                                                        9 місяців
+                                                    </option>
+                                                    <option value="6m">
+                                                        6 місяців
+                                                    </option>
+                                                    <option value="3m">
+                                                        3 місяців
+                                                    </option>
+                                                    <option value="1m">
+                                                        1 місяців
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <button
+                                                class="buttons tariffs__info--card-btn"
+                                            >
+                                                <p
+                                                    class="text-uppercase tariffs__info--card-btn--title"
+                                                >
+                                                    Спробувати
+                                                </p>
+                                                <p
+                                                    class="tariffs__info--card-btn--subtitle"
+                                                >
+                                                    5 днів безкоштовно
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="tariffs__info--card tariffs__info--card-vip"
+                                >
+                                    <h3
+                                        class="tariffs__info--card-title text-uppercase"
+                                    >
+                                        VIP
+                                    </h3>
+                                    <div
+                                        class="tariffs__info--card-data tariffs__info--card-data--vip"
+                                    >
+                                        <ul class="tariffs__info--card-list">
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Ручний трейдинг
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Автоматичне або
+                                                    напівавтоматичне копіювання
+                                                    угод
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Особистий кабінет зі
+                                                    статистикою
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Короткострокові,
+                                                    середньострокові та інвест
+                                                    угоди
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Доступ до Vip чату з
+                                                    командою
+                                                </p>
+                                            </li>
+                                            <li
+                                                class="tariffs__info--card-item"
+                                            >
+                                                <svg width="12" height="12">
+                                                    <use
+                                                        href="./images/icons.svg#icon-tick"
+                                                    ></use>
+                                                </svg>
+                                                <p
+                                                    class="tariffs__info--card-text"
+                                                >
+                                                    Наш авторський курс з
+                                                    трейдингу
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <div
+                                            class="tariffs__info--card-deposit"
+                                        >
+                                            <div
+                                                class="tariffs__info--card-price"
+                                            >
+                                                <span
+                                                    class="tariffs__info--card-amount"
+                                                    >$585<sup
+                                                        class="tariffs__info--card-sup"
+                                                        >-35%</sup
+                                                    ></span
+                                                >
+                                                <select
+                                                    name="month"
+                                                    class="tariffs__info--card-month text-white"
+                                                >
+                                                    <option
+                                                        value="12m"
+                                                        selected
+                                                    >
+                                                        12 місяців
+                                                    </option>
+                                                    <option value="9m">
+                                                        9 місяців
+                                                    </option>
+                                                    <option value="6m">
+                                                        6 місяців
+                                                    </option>
+                                                    <option value="3m">
+                                                        3 місяців
+                                                    </option>
+                                                    <option value="1m">
+                                                        1 місяців
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <button
+                                                class="buttons tariffs__info--card-btn"
+                                            >
+                                                <p
+                                                    class="text-uppercase tariffs__info--card-btn--title"
+                                                >
+                                                    Спробувати
+                                                </p>
+                                                <p
+                                                    class="tariffs__info--card-btn--subtitle"
+                                                >
+                                                    5 днів безкоштовно
+                                                </p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <h3>VIP</h3>
-                        <ul>
-                            <li>Ручний трейдинг</li>
-                            <li>
-                                Автоматичне або напівавтоматичне копіювання угод
-                            </li>
-                            <li>Особистий кабінет зі статистикою</li>
-                            <li>
-                                Короткострокові, середньострокові та інвест
-                                угоди
-                            </li>
-                            <li>Доступ до Vip чату з командою</li>
-                            <li>Наш авторський курс з трейдингу</li>
-                        </ul>
-                        <div>
-                            <div>
-                                <span>$585<sup>-35%</sup></span>
-                                <select name="month">
-                                    <option value="12m" selected>
-                                        12 місяців
-                                    </option>
-                                    <option value="9m">9 місяців</option>
-                                    <option value="6m">6 місяців</option>
-                                    <option value="3m">3 місяців</option>
-                                    <option value="1m">1 місяців</option>
-                                </select>
-                            </div>
-                            <button>
-                                <p>Спробувати</p>
-                                <p>5 днів безкоштовно</p>
-                            </button>
-                        </div>
-                    </div>
                 </div>
-            </section> -->
+            </section>
             <!-- <section>
                 <h2>відгуки учасників ком'юніті</h2>
                 <ul>

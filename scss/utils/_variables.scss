@@ -11,6 +11,7 @@
     --color-bg-dark: #030718;
     --color-bg-light: #fff;
     --color-icon: #e7f7f8;
+    --color-light-20: rgba(255, 255, 255, 0.2);
     --color-light-30: rgba(255, 255, 255, 0.3);
     --color-light-34: rgba(255, 255, 255, 0.34);
     --color-light-40: rgba(255, 255, 255, 0.4);
@@ -20,7 +21,10 @@
     --color-dark-50: rgba(0, 0, 0, 0.5);
     --color-dark-80: rgba(0, 0, 0, 0.8);
     --color-bg-dark-80: rgb(3, 7, 24, 0.8);
+    --color-bg-dark-56: rgb(3, 7, 24, 0.56);
     --color-primary-dark-20: rgb(87, 225, 255, 0.2);
+    --color-brand-light-40: rgb(106, 84, 255, 0.4);
+    --color-primary-dark-80: rgb(87, 225, 255, 0.8);
     --shadow-button: 0 0 4px 0 rgb(87, 225, 255);
 }
 

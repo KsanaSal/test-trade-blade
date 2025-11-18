@@ -20,5 +20,18 @@
             <path d="M5.40477 1.41467L9.69048 5.91467M5.40477 1.41467L0.690475 5.91467M5.40477 1.41467V17.4147"
                 stroke="#35FF9E" stroke-width="2" />
         </symbol>
+
+        <symbol id="icon-tick" width="12" height="12" viewBox="0 0 12 12" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_185_392)">
+                <path d="M2 6.5625L5.71231 10.2748L10.9623 2.39982" stroke="white" stroke-width="1.4"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+            <defs>
+                <clipPath id="clip0_185_392">
+                    <rect width="12" height="12" fill="white" />
+                </clipPath>
+            </defs>
+        </symbol>
     </defs>
 </svg>
