@@ -1781,4 +1781,127 @@ button {
   padding: 16px 24px;
   width: 300px;
   margin: 0 auto;
+}
+
+.faq {
+  padding: 56px 0 54px 0;
+  background-color: var(--color-white);
+}
+@media screen and (min-width: 768px) {
+  .faq {
+    padding: 70px 0 60px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .faq {
+    padding: 96px 0 96px 0;
+  }
+}
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .faq__container {
+    margin-left: 100px;
+    gap: 52px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .faq__container {
+    margin-left: 220px;
+    gap: 64px;
+  }
+}
+.faq__title {
+  font-size: 28px;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .faq__title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .faq__title {
+    font-size: 44px;
+  }
+}
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.faq__item {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  background-color: var(--color-primary-light);
+  border-radius: 4px;
+  width: auto;
+}
+@media screen and (min-width: 768px) {
+  .faq__item {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .faq__item {
+    width: 846px;
+  }
+}
+.faq__item--head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.75rem 0;
+}
+.faq__item--title {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-bg-dark);
+  width: 270px;
+}
+@media screen and (min-width: 768px) {
+  .faq__item--title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .faq__item--title {
+    font-size: 24px;
+  }
+}
+.faq__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.32s ease;
+  color: var(--color-light-80);
+}
+
+.icon-up {
+  display: none;
+}
+
+.faq__item.is-open .icon-down {
+  display: none;
+}
+
+.faq__item.is-open .icon-up {
+  display: inline-block;
+}
+
+.faq__item.is-open {
+  background-color: var(--color-brand-light);
+  gap: 12px;
+}
+
+.faq__item.is-open .faq__item--title {
+  color: var(--color-white);
 }/*# sourceMappingURL=main.css.map */
