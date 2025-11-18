@@ -238,6 +238,29 @@ button {
   }
 }
 
+.input {
+  padding: 15px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-brand-normal);
+  color: var(--color-light-34);
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: auto;
+}
+@media screen and (min-width: 768px) {
+  .input {
+    gap: 16px;
+    padding: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .input {
+    padding: 20px 16px;
+  }
+}
+
 .section {
   padding: 40px 0;
 }
@@ -1036,27 +1059,14 @@ button {
     flex-direction: row;
   }
 }
-.about__card--input {
-  padding: 15px 16px;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--color-brand-normal);
-  color: var(--color-light-34);
-  font-weight: 500;
-  text-transform: uppercase;
-  font-size: 14px;
-}
 @media screen and (min-width: 768px) {
   .about__card--input {
-    gap: 16px;
-    padding: 16px;
     width: 340px;
   }
 }
 @media screen and (min-width: 1440px) {
   .about__card--input {
     width: 500px;
-    padding: 20px 16px;
   }
 }
 .about__card--btn {
@@ -1904,4 +1914,96 @@ button {
 
 .faq__item.is-open .faq__item--title {
   color: var(--color-white);
+}
+
+.subscribe {
+  padding: 16px 0;
+  background-color: var(--color-brand-light);
+}
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding: 32px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscribe {
+    padding: 40px 0;
+  }
+}
+.subscribe__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: unset;
+  }
+}
+.subscribe__text {
+  font-size: 20px;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__text {
+    font-size: 24px;
+    width: 380px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscribe__text {
+    font-size: 28px;
+    width: 530px;
+  }
+}
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    gap: 10px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscribe__form {
+    position: relative;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscribe__input {
+    width: 500px;
+    height: 60px;
+  }
+}
+.subscribe__btn {
+  font-weight: 500;
+  width: auto;
+}
+@media screen and (min-width: 768px) {
+  .subscribe__btn {
+    width: 300px;
+    padding: 16px 24px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .subscribe__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    width: 230px;
+    height: 52px;
+  }
 }/*# sourceMappingURL=main.css.map */

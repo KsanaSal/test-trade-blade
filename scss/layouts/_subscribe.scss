@@ -1,0 +1,88 @@
+@use "../utils/variables" as *;
+
+.subscribe {
+    padding: 16px 0;
+    background-color: var(--color-brand-light);
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 32px 0;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+        padding: 40px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            gap: unset;
+        }
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 500;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 24px;
+            width: 380px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 28px;
+            width: 530px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        @media screen and (min-width: $bp-tablet) {
+            gap: 10px;
+            align-items: center;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            position: relative;
+            flex-direction: row;
+        }
+    }
+
+    &__input {
+        @media screen and (min-width: $bp-tablet) {
+            width: 300px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 500px;
+            height: 60px;
+        }
+    }
+
+    &__btn {
+        font-weight: 500;
+        width: auto;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 300px;
+            padding: 16px 24px;
+            font-size: 16px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 4px;
+            width: 230px;
+            height: 52px;
+        }
+    }
+}

@@ -8,6 +8,7 @@
 @use "./components/link";
 @use "./components/button-opacity";
 @use "./components/buttons";
+@use "./components/input";
 
 @use "./layouts/section";
 @use "./layouts/container";
@@ -22,3 +23,4 @@
 @use "./layouts/tariffs";
 @use "./layouts/reviews";
 @use "./layouts/faq";
+@use "./layouts/subscribe";
